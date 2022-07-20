@@ -1,0 +1,28 @@
+.containerNav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #9ADCFF;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    margin-bottom: 1rem;
+}
+.containerList{
+    display: flex;
+    list-style: none;
+}
+
+.containerList li{
+    padding-right: 2rem;
+    
+    
+}
+.containerList li button{
+    background: none ;
+    border: none;
+    font-size: 25px;
+    text-transform: uppercase;
+    
+
+}
