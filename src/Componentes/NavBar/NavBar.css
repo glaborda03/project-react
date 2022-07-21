@@ -23,6 +23,15 @@
     border: none;
     font-size: 25px;
     text-transform: uppercase;
+    cursor: pointer;
     
+}
 
+.CartWidget{
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.CartWidget :hover{
+    color:aliceblue;
 }
