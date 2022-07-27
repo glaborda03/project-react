@@ -1,0 +1,31 @@
+
+.itemProducts{
+
+    float: left;
+    width: 20%;
+    box-shadow: 1px 1px 5px rgb(175 175 175 / 28%);
+    border: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-right: 10%;
+    margin-bottom: 5rem;
+
+}
+
+.itemProducts img{
+width: 250px;
+height: 250px;
+}
+
+.itemProducts p, span, button{
+font-size: 25px;
+}
+
+.itemProducts button{
+font-size: 25px;
+background-color: #9ADCFF;
+}
