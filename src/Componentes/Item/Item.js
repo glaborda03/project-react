@@ -1,23 +1,23 @@
 import ItemCount from "../ItemCount/ItemCount"
-import "./ItemProducts.css"
+import "./Item.css"
 
-const ItemProduct = ({data}) =>{
-    const {titulo, imagen, precio, stock}= data
+const Item = ({ data }) => {
+    const { titulo, imagen, precio, stock } = data
 
-    
-    return(
+
+    return (
 
         <div className="itemProducts">
             <img src={`/assets/productos/${imagen}`} alt="Imagen producto" />
             <p>{titulo}</p>
             <span>$ {precio}</span>
-            <ItemCount stock = {stock}  />
+            <ItemCount stock={stock} />
             <p>Stock: {stock}</p>
             <button>Agregar al carrito</button>
         </div>
     )
-        
-    
+
+
 }
 
-export default ItemProduct
+export default Item
