@@ -1,7 +1,8 @@
 import "./ItemDetail.css"
+import ItemCount from "../ItemCount/ItemCount"
 
 const ItemDetail = ({ datos }) => {
-    const { title, imagenes, price,  descripcion, } = datos
+    const { title, imagenes, price,  descripcion, stock } = datos
 
 
     return (
@@ -12,6 +13,7 @@ const ItemDetail = ({ datos }) => {
                 <h1>{title}</h1>
                 <h3>{descripcion}</h3>
                 <p>Precio ${price}</p>
+                <ItemCount stock={stock} />
                 <button>Comprar</button>
             </div>
 

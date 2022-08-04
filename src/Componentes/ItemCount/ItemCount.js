@@ -7,7 +7,7 @@ const ItemCount = ({ stock }) => {
 
 
     const addNumber = () => {
-        if (contador < stock) {
+        if (contador < stock1) {
             setContador(contador + 1)
         }
 
