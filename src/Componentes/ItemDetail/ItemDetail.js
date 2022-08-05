@@ -1,18 +1,19 @@
 import "./ItemDetail.css"
 import ItemCount from "../ItemCount/ItemCount"
 
-const ItemDetail = ({ datos }) => {
-    const { title, imagenes, price,  descripcion, stock } = datos
+
+const ItemDetail = ({ products }) => {
+    const { titulo, imagen, precio, descripcion, stock } = products
 
 
     return (
 
         <div className="itemDetailCaja">
-            <img src={`/assets/productos/${imagenes}`} alt="Imagen producto" />
+            <img src={`/assets/productos/${imagen}`} alt="Imagen producto" />
             <div className="itemDetail">           
-                <h1>{title}</h1>
+                <h1>{titulo}</h1>
                 <h3>{descripcion}</h3>
-                <p>Precio ${price}</p>
+                <p>Precio ${precio}</p>
                 <ItemCount stock={stock} />
                 <button>Comprar</button>
             </div>

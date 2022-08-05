@@ -3,6 +3,7 @@ const products = [
         Id: 1,      
         titulo: "Collar de Tela",
         categoria: "accesorios",
+        descripcion: "Collar de Tela hecho 100% a mano, lavable, para todo tipo de Razas",
         imagen: "collar.jpg",
         precio: 750,
         stock: 10
@@ -12,6 +13,7 @@ const products = [
         Id: 2,    
         titulo: "Correa de Tela",
         categoria: "accesorios",
+        descripcion:"Correa de Tela hecho 100% a mano, lavable, para todo tipo de Razas",
         imagen: "correa.jpg",
         precio: 950,
         stock: 8
@@ -21,6 +23,7 @@ const products = [
         Id: 3,
         titulo: "Arnes de Tela",
         categoria: "accesorios",
+        descripcion:"Arnes de Tela hecho 100% a mano, lavable, para todo tipo de Razas",
         imagen: "Arnes.jpg",
         precio: 1290,
         stock: 6
@@ -28,8 +31,9 @@ const products = [
 
     {
         Id: 4,
-        titulo: "Frost Racion para perros",
+        titulo: "Frost",
         categoria: "alimento",
+        descripcion:"Alimento Frost Light para razas grandes",
         imagen: "Frost.jpg",
         precio: 2890,
         stock: 15
@@ -37,8 +41,9 @@ const products = [
 
     {
         Id: 5,
-        titulo: "Eukanuba Cachorro Raza Mediana 15 Kg",
+        titulo: "Eukanuba",
         categoria: "alimento",
+        descripcion:"Alimento Eukanuba Cachorro Raza Mediana 15 Kg",
         imagen: "Eukanuba.jpg",
         precio: 2890,
         stock: 15
@@ -46,8 +51,9 @@ const products = [
 
     {
         Id: 6,
-        titulo: "Biofresh Adulto Raza Grande 15 Kg + Cama!",
+        titulo: "Promo Biofresh",
         categoria: "alimento",
+        descripcion:"Alimento Biofresh Adulto Raza Grande 15 Kg + Cama! ",
         imagen: "BioFresh.jpg",
         precio: 2890,
         stock: 15

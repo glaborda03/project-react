@@ -5,17 +5,18 @@ import { useParams } from 'react-router-dom'
 
 
 
-const ItemDetailContainer = ({ Titulo }) => {
+const ItemDetailContainer = () => {
 
 
     const [Articulo, setAritculo] = useState([])
     const {id} = useParams()
     const filterId = products.filter((product) => product.Id === Number(id))
 
-    const getArticulo = () => new Promise((resolve, reject) => {
+    const getArticulo =  new Promise((resolve, reject) => {
         setTimeout(() => {
+            console.log(filterId)
             resolve(filterId[0])
-        }, 2000)
+        }, 5000)
 
     })
 
@@ -23,7 +24,6 @@ const ItemDetailContainer = ({ Titulo }) => {
 
         getArticulo
             .then((res) => {
-                console.log(res)
                 setAritculo(res)
             })
 
@@ -33,7 +33,7 @@ const ItemDetailContainer = ({ Titulo }) => {
 
     return (
         <div>
-            <ItemDetail datos={Articulo} />
+            <ItemDetail products={Articulo} />
 
 
         </div>

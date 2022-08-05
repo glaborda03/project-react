@@ -12,7 +12,7 @@ const ItemListContainer = ({ Titulo }) => {
     const {categoryid} = useParams()
     const filterByCategory = products.filter((products) => products.categoria === categoryid)
 
-    const getproducts =() => new Promise((resolve, reject) => {
+    const getproducts = new Promise((resolve, reject) => {
         setTimeout(() => {
             if (categoryid === "accesorios" || categoryid === "alimentos"){
                 resolve(filterByCategory)
