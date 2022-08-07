@@ -34,13 +34,12 @@ const ItemListContainer = ({ Titulo }) => {
                 setListProd(res)
             })
 
-    }, [])
+    }, [cat])
 
 
 
     return (
-        <div>
-            <h2>{Titulo}</h2>
+        <div className="inicio">
             <ItemList dataProducts={listProd} />
 
 

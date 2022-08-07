@@ -7,17 +7,18 @@ const Item = ({ data }) => {
 
 
     return (
-         <Link style={{ textDecoration: "none", color: 'black' }} to={`/productos/${Id}`} >
+         
             <div className="itemProducts">
-                <img src={`/assets/productos/${imagen}`} alt="Imagen producto" />
-                <p>{titulo}</p>
-                <span>$ {precio}</span>
-                <button>Agregar al carrito</button>
+                <Link style={{ textDecoration: "none", color: 'black' }} to={`/productos/${Id}`} >
+                    <img src={`/assets/productos/${imagen}`} alt="Imagen producto" />
+                    <p>{titulo}</p>
+                    <span>$ {precio}</span>
+                </Link>
                 <ItemCount stock={stock} />
                 <p>Stock: {stock}</p>
                 
             </div>
-        </Link>
+        
     )
 
 

@@ -6,6 +6,7 @@ import Contacto from './Componentes/pages/Contacto';
 import Inicio from './Componentes/pages/Inicio';
 import Detail from "./Componentes/pages/Detail"
 import ItemListContainer from './Componentes/ItemListContainer/ItemListContainer';
+import Cheakout from './Componentes/pages/Cheakout';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/productos/:id" element={<Detail/>} />
           <Route path="/Categoria/:cat" element={<ItemListContainer/>} />
           <Route path="/Contacto" element={<Contacto />} />
+          <Route path="/cart" element={<Cheakout/>} />
           
         </Routes>
       </BrowserRouter>
