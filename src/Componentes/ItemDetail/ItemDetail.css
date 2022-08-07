@@ -36,7 +36,7 @@
         border-radius: .5rem;
         padding: .5rem;
         box-shadow: 0 .5rem 1rem rgba(63, 57, 57, 0.815);
-        margin-left: 30%;
+        /* margin-left: 30%; */
         cursor: pointer;
 
     }

@@ -12,11 +12,11 @@ const ItemDetailContainer = () => {
     const {id} = useParams()
     const filterId = products.filter((product) => product.Id === Number(id))
 
-    const getArticulo =  new Promise((resolve, reject) => {
+    const getArticulo = new Promise((resolve, reject) => {
         setTimeout(() => {
             console.log(filterId)
             resolve(filterId[0])
-        }, 5000)
+        }, 2000)
 
     })
 
@@ -28,8 +28,6 @@ const ItemDetailContainer = () => {
             })
 
     }, [])
-
-
 
     return (
         <div>

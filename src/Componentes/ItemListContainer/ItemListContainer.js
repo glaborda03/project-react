@@ -9,12 +9,13 @@ const ItemListContainer = ({ Titulo }) => {
 
 
     const [listProd, setListProd] = useState([])
-    const {categoryid} = useParams()
-    const filterByCategory = products.filter((products) => products.categoria === categoryid)
+    const {cat} = useParams()
+    const filterByCategory = products.filter((products) => products.categoria === cat)
+
 
     const getproducts = new Promise((resolve, reject) => {
         setTimeout(() => {
-            if (categoryid === "accesorios" || categoryid === "alimentos"){
+            if (cat === "accesorios" || cat === "alimentos"){
                 resolve(filterByCategory)
             }
 

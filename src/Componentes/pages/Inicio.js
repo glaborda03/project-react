@@ -4,7 +4,7 @@ const Inicio = () =>{
 
     return(
         <div className='mainContainer'>
-        <ItemListContainer Titulo = "Productos" />
+        <ItemListContainer Titulo />
       </div>
     )
 

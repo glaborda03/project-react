@@ -32,7 +32,7 @@ const products = [
     {
         Id: 4,
         titulo: "Frost",
-        categoria: "alimento",
+        categoria: "alimentos",
         descripcion:"Alimento Frost Light para razas grandes",
         imagen: "Frost.jpg",
         precio: 2890,
@@ -42,7 +42,7 @@ const products = [
     {
         Id: 5,
         titulo: "Eukanuba",
-        categoria: "alimento",
+        categoria: "alimentos",
         descripcion:"Alimento Eukanuba Cachorro Raza Mediana 15 Kg",
         imagen: "Eukanuba.jpg",
         precio: 2890,
@@ -52,7 +52,7 @@ const products = [
     {
         Id: 6,
         titulo: "Promo Biofresh",
-        categoria: "alimento",
+        categoria: "alimentos",
         descripcion:"Alimento Biofresh Adulto Raza Grande 15 Kg + Cama! ",
         imagen: "BioFresh.jpg",
         precio: 2890,
