@@ -7,9 +7,11 @@ import Inicio from './Componentes/pages/Inicio';
 import Detail from "./Componentes/pages/Detail"
 import ItemListContainer from './Componentes/ItemListContainer/ItemListContainer';
 import Cheakout from './Componentes/pages/Cheakout';
+import CartProvider from './Componentes/Context/CartContext';
 
 function App() {
   return (
+    <CartProvider>
     <div className='container'>
 
 
@@ -28,7 +30,7 @@ function App() {
       </BrowserRouter>
 
     </div>
-
+    </CartProvider>
 
 
   );

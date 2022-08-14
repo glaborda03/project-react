@@ -20,7 +20,7 @@ const ItemDetail = ({ products }) => {
                 <p>Precio ${precio}</p>
                 <h3>Stock disponible: {stock}</h3>
                 {
-                    cantSelecionada > 1 ? <Link to="/Cart"><button>TERMINAR COMPRA</button></Link> : <ItemCount stock={stock} cantidadCompra={setCantidadSelecionada} />
+                    cantSelecionada > 0 ? <Link to="/Cart"><button>TERMINAR COMPRA</button></Link> : <ItemCount stock={stock} cantidadCompra={setCantidadSelecionada} />
                 }
                 
                 

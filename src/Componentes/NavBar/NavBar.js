@@ -14,7 +14,12 @@ const NavBar = ()=> {
             <Link to="/Categoria/accesorios"><li><button> ACCESORIOS</button></li></Link>
             <Link to="/Contacto"><li><button> CONTACTO</button></li></Link>
         </ul>
-        <CartWidget />
+        <Link style={{textDecoration: "none", color:'black'}} to="/Cart">
+          
+            <CartWidget />
+          
+        </Link>
+        
       </div>
     )
 }
