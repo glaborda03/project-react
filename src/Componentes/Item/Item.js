@@ -14,8 +14,8 @@ const Item = ({ data }) => {
                     <p>{titulo}</p>
                     <span>$ {precio}</span>
                 </Link>
-                {/* <ItemCount stock={stock} />
-                <p>Stock: {stock}</p> */}
+                <ItemCount stock={stock} />
+                <p>Stock: {stock}</p>
                 
             </div>
         

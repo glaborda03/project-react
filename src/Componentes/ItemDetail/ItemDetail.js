@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 
 
 const ItemDetail = ({ products }) => {
-    const { titulo, imagen, precio, descripcion, stock } = products
+    const { titulo, imagen, precio, descripcion, stock, } = products
 
     const [cantSelecionada, setCantidadSelecionada] = useState(0)
 
@@ -20,7 +20,7 @@ const ItemDetail = ({ products }) => {
                 <p>Precio ${precio}</p>
                 <h3>Stock disponible: {stock}</h3>
                 {
-                    cantSelecionada > 0 ? <Link to="/Cart"><button>TERMINAR COMPRA</button></Link> : <ItemCount stock={stock} cantidadCompra={setCantidadSelecionada} />
+                    cantSelecionada > 0 ? <Link to="/Cart"><button>TERMINAR COMPRA</button></Link> : <ItemCount stock={stock} cantidadCompra={setCantidadSelecionada} products={products}/>
                 }
                 
                 

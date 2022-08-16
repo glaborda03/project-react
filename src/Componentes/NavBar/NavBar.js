@@ -7,7 +7,7 @@ const NavBar = ()=> {
     return(
 
       <div className="containerNav">
-        <Link to="/"><img src="./assets/Pupperina logo.png" width="200px" height="200px" className="NavBarLogo" alt='Imagen logo' /></Link>
+        <Link to="/"><img src="./assets/Pupperinalogo.png" width="200px" height="200px" className="NavBarLogo" alt='Imagen logo' /></Link>
         <ul className='containerList'>
             <Link to="/"><li><button> INICIO</button></li></Link>
             <Link to="/Categoria/alimentos"><li><button> ALIMENTOS</button></li></Link>

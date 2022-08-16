@@ -1,20 +1,21 @@
 import { createContext, useState } from "react";
 
+
 export const CartContext = createContext();
 
 const CartProvider = ({children}) => {
      const [cart, setCart] = useState([]);
 
-     const addToCart = (product) => {
+     const addToCart = (prod) => {
       const isInCart = cart.find(
-         (productInCart) => productInCart.id === product.id
+         (productInCart) => productInCart.Id === prod.Id
        );
        if (isInCart) {
          const newArray = cart.map((productInCart) => {
-           if (productInCart.id === product.id) {
+           if (productInCart.Id === prod.Id) {
              return {
                ...productInCart,
-               contador: productInCart.contador + product.contador,
+               contador: productInCart.contador + prod.contador,
              };
            } else {
              return productInCart;
@@ -22,16 +23,16 @@ const CartProvider = ({children}) => {
          });
          setCart(newArray);
        } else {
-         setCart([...cart, product]);
+         setCart([...cart, prod]);
        }
      };
 
      const clear = () => {setCart([])};
 
-     const removeItem = (id) => {
-      const newCart = cart.filter((product) => product.id !== id)
+     const removeItem = (Id) => {
+      const newCart = cart.filter((prod) => prod.Id !== Id)
       setCart(newCart);
-     }
+     };
 
 
 

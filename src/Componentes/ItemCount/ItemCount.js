@@ -3,6 +3,7 @@ import { CartContext } from "../Context/CartContext"
 import "./ItemCount.css"
 
 
+
 const ItemCount = ({ stock, cantidadCompra, products }) => {
     let stock1 = stock
     const [contador, setContador] = useState(1)
@@ -22,9 +23,9 @@ const ItemCount = ({ stock, cantidadCompra, products }) => {
     }
 
     const onAdd = () =>{
-       cantidadCompra(contador)};
+       cantidadCompra(contador)
        addToCart(products);
-
+    };
 
    
 

@@ -1,6 +1,7 @@
 import Table from 'react-bootstrap/Table';
 import React, { useContext } from "react";
 import { CartContext } from '../Context/CartContext';
+import "./Cheakout.css"
 
 
 const Cheakout = () => {
@@ -11,43 +12,59 @@ const Cheakout = () => {
             <h1>Cheakout</h1>
 
 
-            <Table striped>
+            <Table striped className='tabla'>
                 <thead>
-                    <tr>
+                    <tr className='cabecera'>
                         <th>Articulo</th>
+                        <th>Imagen</th>
+                        <th>Precio</th>
                         <th>Cantidad</th>
-                        <th>Eliminar</th>
+                        <th>Eliminar Articulo</th>
                     </tr>
                 </thead>
                 <tbody>
                     {cart.map((product) => {
                         return (
                             <tr>
+                                
                                 <td>
-                                    <div>
-                                        <img src={product.imagen} alt="Imagen Producto" />
-                                        <p> {product.titulo} </p>
-                                        <p> {product.precio} </p>
+                                    <div className='Cheakout'>
+                                        <p className='descripcion'> {product.descripcion} </p>
+                                    </div>
+                                </td>
+                                
+                                
+                                <td>
+                                    <div className='Cheakout img'>
+                                        <img src={`/assets/productos/${product.imagen}`} alt="Imagen Producto" />
                                     </div>
                                 </td>
 
+                                
+
 
                                 <td>
-                                    <p> {product.contador} </p>
+                                    <p className='precio'>{`$ ${product.precio}`} </p>
+                                </td>
+
+                                <td>
+                                    <p >{product.contador} </p>
                                 </td>
 
 
 
                                 <td>
-                                    <button onClick={removeItem}> Eliminar Articulo</button>
+                                    <button className='btnEliminarArticulo' onClick={removeItem}> Eliminar</button>
                                 </td>
                             </tr>
                         )
                     })};
                 </tbody>
-                <tfoot>
-                    <button onClick={clear}>Vaciar Carrito</button>
-                    <button onClick={clear}>Confirmar compra</button>
+                <tfoot className='btnFooter'>
+                 
+                        <button className='btnVaciarCarrito' onClick={clear}>Vaciar Carrito</button>
+                        <button onClick={clear}>Confirmar compra</button>
+                   
 
                 </tfoot>
             </Table>

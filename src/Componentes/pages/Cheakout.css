@@ -1,0 +1,46 @@
+
+
+.Cheakout{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.Cheakout img{
+    width: 100px;
+    height: 100px;
+    align-items: center;
+
+}
+
+.precio{
+    font-size: 30px;
+    margin-left: 15%;
+}
+
+.tabla{
+    width: 80%;
+}
+
+.descripcion{
+    font-size: 20px;
+}
+
+.btnEliminarArticulo{
+
+    margin-left: 20%;
+}
+.btnVaciarCarrito{
+    text-align: end;
+    margin-right: 10%;
+}
+
+.btnFooter{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.cabecera{
+    font-size: 20px;
+}
