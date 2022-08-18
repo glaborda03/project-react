@@ -48,13 +48,13 @@ const Cheakout = () => {
                                 </td>
 
                                 <td>
-                                    <p >{product.contador} </p>
+                                    <p className='precio' >{product.contador} </p>
                                 </td>
 
 
 
                                 <td>
-                                    <button className='btnEliminarArticulo' onClick={removeItem}> Eliminar</button>
+                                    <button className='btnEliminarArticulo' onClick={()=>removeItem(product.Id)}> Eliminar</button>
                                 </td>
                             </tr>
                         )
