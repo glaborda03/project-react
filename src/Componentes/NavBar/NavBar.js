@@ -14,7 +14,7 @@ const NavBar = ()=> {
             <Link to="/Categoria/accesorios"><li><button> ACCESORIOS</button></li></Link>
             <Link to="/Contacto"><li><button> CONTACTO</button></li></Link>
         </ul>
-        <Link style={{textDecoration: "none", color:'black'}} to="/Cart">
+        <Link style={{textDecoration: "none", color:'black', display:'flex'}} to="/Cart">
           
             <CartWidget />
           

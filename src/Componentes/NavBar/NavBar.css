@@ -27,6 +27,13 @@
     
 }
 
+.CartWidgetCantidad{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+}
+
 .CartWidget{
     font-size: 3rem;
     cursor: pointer;

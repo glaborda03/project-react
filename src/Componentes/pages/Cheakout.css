@@ -15,8 +15,8 @@
 
 .precio{
     font-size: 30px;
-    margin-left: 15%;
     text-align: center;
+    width: 100%;
 }
 
 .tabla{
@@ -32,16 +32,44 @@
     margin-left: 20%;
 }
 .btnVaciarCarrito{
-    text-align: end;
-    margin-right: 10%;
+   
+    margin-bottom: 5rem;
+    cursor: pointer;
+}
+.btnConfirmarCompra{
+    margin-bottom: 1rem;
+    cursor: pointer;
 }
 
-.btnFooter{
-    width: 100%;
-    display: flex;
-    justify-content: end;
+.btnSeguirComprando{
+    margin-bottom: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    list-style: none;
 }
 
 .cabecera{
     font-size: 20px;
 }
+
+.carritoVacio{
+
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 6.5rem;
+}
+
+.carritoVacio button{
+
+    text-decoration: none;
+
+}
+.totalCompra{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

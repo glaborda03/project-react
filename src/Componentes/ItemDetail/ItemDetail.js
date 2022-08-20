@@ -19,8 +19,10 @@ const ItemDetail = ({ products }) => {
                 <h3>{descripcion}</h3>
                 <p>Precio ${precio}</p>
                 <h3>Stock disponible: {stock}</h3>
+                
                 {
                     cantSelecionada > 0 ? <Link to="/Cart"><button>TERMINAR COMPRA</button></Link> : <ItemCount stock={stock} cantidadCompra={setCantidadSelecionada} products={products}/>
+                    
                 }
                 
                 
