@@ -1,7 +1,8 @@
 import ItemDetail from "../ItemDetail/ItemDetail"
-import products from "../../utils/products.mock"
 import { useEffect, useState } from "react"
 import { useParams } from 'react-router-dom'
+import db from "../../FirebaseConfig"
+import { doc, getDoc } from "firebase/firestore"
 
 
 
@@ -9,25 +10,26 @@ const ItemDetailContainer = () => {
 
 
     const [Articulo, setAritculo] = useState([])
-    const {id} = useParams()
-    const filterId = products.filter((product) => product.Id === Number(id))
+    const { id } = useParams()
+    // const filterId = products.filter((product) => product.Id === Number(id))
 
-    const getArticulo = new Promise((resolve, reject) => {
-        setTimeout(() => {
-            console.log(filterId)
-            resolve(filterId[0])
-        }, 2000)
 
-    })
+    const getArticulo = async () => {
+        const docRef = doc(db, "Productos", id)
+        const docSnapshot = await getDoc(docRef)
+        let producto = docSnapshot.data()
+        producto.Id = id
+        return producto
+    }
 
     useEffect(() => {
 
-        getArticulo
+        getArticulo()
             .then((res) => {
                 setAritculo(res)
             })
 
-    }, [])
+    }, [id])
 
     return (
         <div>

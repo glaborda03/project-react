@@ -9,13 +9,13 @@ const Item = ({ data }) => {
     return (
          
             <div className="itemProducts">
-                <Link style={{ textDecoration: "none", color: 'black' }} to={`/productos/${Id}`} >
+                <Link style={{ textDecoration: "none", color: 'black', marginBottom: '2rem' }}  to={`/productos/${Id}`}>
                     <img src={`/assets/productos/${imagen}`} alt="Imagen producto" />
                     <p>{titulo}</p>
-                    <span>$ {precio}</span>
+                    <span className="itemProductPrecio"> Precio $ {precio}</span>
                 </Link>
-                <ItemCount stock={stock} />
-                <p>Stock: {stock}</p>
+                {/* <ItemCount stock={stock} />
+                <p>Stock: {stock}</p> */}
                 
             </div>
         
@@ -23,5 +23,6 @@ const Item = ({ data }) => {
 
 
 }
+ 
 
 export default Item
