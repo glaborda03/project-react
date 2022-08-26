@@ -1,0 +1,21 @@
+.modal {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 400px;
+    height: 500px;
+    box-shadow: 1px 5px 5px #00000047;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.iconoClose{
+    position: fixed;
+    right: 2%;
+    top: 0;
+    z-index: -1;
+    font-size: 1.7rem;
+}

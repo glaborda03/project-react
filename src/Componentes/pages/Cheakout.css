@@ -73,3 +73,40 @@
     align-items: center;
 }
 
+.formCart{
+
+    margin-top: 2rem;
+
+}
+
+.inputForm {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 15px 0;
+    box-sizing: border-box;
+  }
+
+  .confirmacionCompra h2{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .confirmacionCompra p{
+
+    font-size: 20px;
+
+  }
+
+
+.btnForm{
+    background-color: gray;
+    color: black;
+    cursor: pointer;
+    
+
+}
+.btnFormCart{
+   position: fixed;
+   bottom: 10%;
+   text-decoration: none;
+}
