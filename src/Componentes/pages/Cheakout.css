@@ -1,58 +1,4 @@
-
-
-.Cheakout{
-    display: flex;
-    justify-content: space-around;
-
-}
-
-.Cheakout img{
-    width: 100px;
-    height: 100px;
-    align-items: center;
-
-}
-
-.precio{
-    font-size: 30px;
-    text-align: center;
-    width: 100%;
-}
-
-.tabla{
-    width: 80%;
-}
-
-.descripcion{
-    font-size: 20px;
-}
-
-.btnEliminarArticulo{
-
-    margin-left: 20%;
-}
-.btnVaciarCarrito{
-   
-    margin-bottom: 5rem;
-    cursor: pointer;
-}
-.btnConfirmarCompra{
-    margin-bottom: 1rem;
-    cursor: pointer;
-}
-
-.btnSeguirComprando{
-    margin-bottom: 1rem;
-    text-decoration: none;
-    cursor: pointer;
-    list-style: none;
-}
-
-.cabecera{
-    font-size: 20px;
-}
-
-.carritoVacio{
+.carritoVacio {
 
     text-align: center;
     justify-content: center;
@@ -60,20 +6,43 @@
     margin-bottom: 6.5rem;
 }
 
-.carritoVacio button{
+.carritoVacio button {
 
-    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
 
 }
-.totalCompra{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+.precio {
+    font-size: 20px;
+    text-align: start;
+    margin: 0% 0% 3% 0%;
 }
 
-.formCart{
+
+.descripcion {
+    font-size: 20px;
+}
+
+.EliminarArticulo {
+    margin: auto;
+    font-weight: 700;
+
+}
+
+.btnEliminarArticulo {
+
+
+    background-color: rgb(185, 185, 185);
+    color: white;
+    cursor: pointer;
+}
+
+.formCart {
 
     margin-top: 2rem;
 
@@ -84,29 +53,131 @@
     padding: 12px 20px;
     margin: 15px 0;
     box-sizing: border-box;
-  }
+}
 
-  .confirmacionCompra h2{
-    margin-top: 4rem;
+.confirmacionCompra h2 {
+    margin-top: 45%;
     margin-bottom: 3rem;
-  }
+}
 
-  .confirmacionCompra p{
+.confirmacionCompra p {
 
     font-size: 20px;
 
-  }
+}
 
 
-.btnForm{
-    background-color: gray;
-    color: black;
+.btnForm {
+    background-color: black;
+    color: white;
     cursor: pointer;
-    
+    font-size: 15px;
+    border-radius: 10px;
+
 
 }
-.btnFormCart{
-   position: fixed;
-   bottom: 10%;
-   text-decoration: none;
+
+.btnFormCart {
+    position: fixed;
+    bottom: 10%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.confirmacionCompra button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.Check {
+
+    font-size: 90px;
+    position: fixed;
+    top: -39%;
+    right: 40%;
+    color: green;
+}
+
+.carrito {
+    display: flex;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 75%;
+
+}
+
+.carrito img {
+    width: 200px;
+    height: 200px;
+    margin-left: 2rem;
+    margin-right: 1rem;
+
+}
+
+.carritoDetalle {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 75%;
+
+
+}
+
+.titulo {
+    font-size: 33px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0% 20% 0% 0%;
+}
+
+.CheackoutContainer {
+
+    display: flex;
+}
+
+.CheackoutCart {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 2%;
+}
+
+.CheackoutResumen {
+
+    width: 25%;
+    border: 1px solid black;
+    height: 40%;
+    padding: 3rem;
+    margin: 0% 2% 5% 0%;
+    text-align: center;
+
+}
+
+.CheackoutResumen h3 {
+
+    font-size: 25px;
+    margin-top: 0%;
+
+}
+
+.CheackoutResumen p {
+
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.CheackoutResumen button {
+
+    font-size: 18px;
+    background-color: #FF9551;
+    color: white;
+    padding: 5%;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 7%;
+    text-decoration: none;
+    cursor: pointer;
 }

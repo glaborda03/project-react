@@ -11,7 +11,6 @@ const ItemDetailContainer = () => {
 
     const [Articulo, setAritculo] = useState([])
     const { id } = useParams()
-    // const filterId = products.filter((product) => product.Id === Number(id))
 
 
     const getArticulo = async () => {

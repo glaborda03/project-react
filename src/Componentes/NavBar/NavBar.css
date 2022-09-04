@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 0 1rem 0 1rem;
     background-color: #9ADCFF;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     margin-bottom: 1rem;
@@ -27,14 +27,14 @@
     
 }
 
-.CartWidgetCantidad{
+.cartWidgetCantidad{
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 25px;
 }
 
-.CartWidget{
+.cartWidget{
     font-size: 3rem;
     cursor: pointer;
 }
