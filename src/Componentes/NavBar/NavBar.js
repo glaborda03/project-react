@@ -12,6 +12,7 @@ const NavBar = ()=> {
             <Link to="/"><li><button> INICIO</button></li></Link>
             <Link to="/Categoria/alimentos"><li><button> ALIMENTOS</button></li></Link>
             <Link to="/Categoria/accesorios"><li><button> ACCESORIOS</button></li></Link>
+            <Link to="/Categoria/Higiene"><li><button> HIGIENE</button></li></Link>
         </ul>
         <Link style={{textDecoration: "none", color:'black', display:'flex'}} to="/Cart">
           

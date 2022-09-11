@@ -9,10 +9,11 @@ Se decidio realizar una tienda online, no solo con el objetivo de tener una mayo
 
 Para desarrollar la tienda se utilizo React JS, como tambien alguna dependencias, tales como:
 
-
-FontAwesome - para los inconos.
-
-React Router Dom - para los enlaces.
+React-bootstrap V. 2.4.0
+Bootstrap V. 5.1.3
+Font-awesome V. 4.7.0 
+React Router Dom V. 18.2.0 
+Firebase V. 9.9.3
 
 ## Instalacion
 
